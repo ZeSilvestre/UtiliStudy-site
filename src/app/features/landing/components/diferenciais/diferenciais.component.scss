@@ -1,0 +1,52 @@
+.section {
+  padding: 0 1rem 3.5rem;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  text-align: center;
+  color: #1570ef;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  color: #0b2a55;
+  font-size: clamp(1.35rem, 2.5vw, 1.95rem);
+}
+
+.diferenciais-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem 1rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 0.8rem;
+  background: linear-gradient(90deg, rgba(21, 112, 239, 0.09), rgba(27, 179, 211, 0.09));
+  color: #183f70;
+
+  i {
+    color: #1570ef;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .diferenciais-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,126 @@
+.section {
+  padding: 3.5rem 1rem 2.5rem;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 0.45rem;
+  color: #0b2a55;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 0 0 2rem;
+  color: #4c6688;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.benefit-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 42%);
+  align-items: center;
+  gap: 0;
+}
+
+.benefit-item.reverse {
+  grid-template-columns: minmax(320px, 42%) minmax(0, 1fr);
+
+  .benefit-copy {
+    order: 2;
+    margin-left: -3.2rem;
+    margin-right: 0;
+  }
+
+  .benefit-media {
+    order: 1;
+  }
+}
+
+.benefit-copy {
+  position: relative;
+  z-index: 2;
+  margin-right: -3.2rem;
+  padding: 1.3rem 1.45rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.58);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(21, 112, 239, 0.14);
+}
+
+h3 {
+  margin: 0 0 0.42rem;
+  color: #133c72;
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0;
+  color: #486282;
+  line-height: 1.5;
+}
+
+.benefit-media {
+  position: relative;
+  z-index: 1;
+  height: clamp(220px, 32vw, 310px);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(27, 179, 211, 0.26), transparent 60%),
+    radial-gradient(circle at 80% 80%, rgba(21, 112, 239, 0.28), transparent 56%),
+    #f6fbff;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #356190;
+
+  i {
+    font-size: 2rem;
+    color: #1570ef;
+  }
+
+  span {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .benefit-item,
+  .benefit-item.reverse {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+
+    .benefit-copy {
+      order: 1;
+      margin: 0;
+    }
+
+    .benefit-media {
+      order: 2;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import 'primeicons/primeicons.css';
+@import 'primeflex/primeflex.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+:root {
+  --utili-primary: #1570ef;
+  --utili-secondary: #1bb3d3;
+  --utili-dark: #0b2a55;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.p-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 0;
+  box-shadow: none;
+}
+
+.p-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(21, 112, 239, 0.08);
+}
