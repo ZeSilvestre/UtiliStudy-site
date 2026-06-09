@@ -9,10 +9,4 @@ import { ButtonModule } from 'primeng/button';
   templateUrl: './public-layout.component.html',
   styleUrl: './public-layout.component.scss',
 })
-export class PublicLayoutComponent {
-  readonly microsoftStoreUrl = 'https://apps.microsoft.com/';
-
-  openStore(): void {
-    window.open(this.microsoftStoreUrl, '_blank', 'noopener,noreferrer');
-  }
-}
+export class PublicLayoutComponent {}

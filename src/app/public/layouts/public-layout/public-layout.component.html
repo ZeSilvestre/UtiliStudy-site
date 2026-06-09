@@ -7,13 +7,15 @@
 
     <nav class="menu">
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+      <a routerLink="/download" routerLinkActive="active">Download</a>
       <a routerLink="/politica-privacidade" routerLinkActive="active">Política de Privacidade</a>
       <p-button
         label="Download"
         icon="pi pi-download"
         size="small"
+        severity="success"
         [raised]="true"
-        (onClick)="openStore()"
+        routerLink="/download"
       ></p-button>
     </nav>
   </div>

@@ -1,0 +1,28 @@
+<section class="download-section">
+  <div class="download-card">
+    <img
+      src="assets/images/branding/logo-utilistudy.png"
+      alt="UtiliStudy"
+      class="download-logo"
+    />
+
+    <h1>Download</h1>
+    <p class="download-meta">{{ config.platform }} · v{{ config.version }}</p>
+
+    <p-button
+      class="download-btn"
+      label="Baixar"
+      icon="pi pi-download"
+      size="large"
+      severity="success"
+      [raised]="true"
+      (onClick)="onDownload()"
+    ></p-button>
+
+    @if (!downloadAvailable) {
+      <p class="download-status">Disponível em breve.</p>
+    }
+
+    <a routerLink="/" class="back-link">Voltar</a>
+  </div>
+</section>

@@ -1,21 +1,14 @@
 <section class="section">
   <div class="container">
     <h2>Comece hoje e transforme seu jeito de estudar.</h2>
-    <p>Login, licença e assinatura são feitos no aplicativo desktop após a instalação.</p>
     <div class="cta-actions">
       <p-button
-        label="Instalar pela Microsoft Store"
+        label="Download"
         icon="pi pi-download"
         size="large"
+        severity="success"
         [raised]="true"
-        (onClick)="openStore()"
-      ></p-button>
-      <p-button
-        label="Baixar no GitHub"
-        icon="pi pi-github"
-        size="large"
-        [outlined]="true"
-        (onClick)="openGithubReleases()"
+        routerLink="/download"
       ></p-button>
     </div>
   </div>

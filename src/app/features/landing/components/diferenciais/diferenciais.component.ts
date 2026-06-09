@@ -13,6 +13,6 @@ export class DiferenciaisComponent {
     'Sons ambientes personalizados',
     'Sistema visual em árvore de progresso',
     'Login Google e licença integrados no app desktop',
-    'Assinatura Premium com Mercado Pago no aplicativo',
+    'Assinatura do plano de uso via Mercado Pago no aplicativo',
   ];
 }

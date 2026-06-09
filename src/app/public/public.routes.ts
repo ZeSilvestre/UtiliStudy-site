@@ -12,6 +12,11 @@ export const PUBLIC_ROUTES: Routes = [
           import('./pages/landing/landing-page.component').then(m => m.LandingPageComponent),
       },
       {
+        path: 'download',
+        loadComponent: () =>
+          import('./pages/download/download-page.component').then(m => m.DownloadPageComponent),
+      },
+      {
         path: 'politica-privacidade',
         loadComponent: () =>
           import('./pages/politica-privacidade/politica-privacidade.component').then(

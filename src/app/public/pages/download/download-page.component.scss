@@ -1,0 +1,64 @@
+.download-section {
+  min-height: calc(100vh - 70px);
+  padding: 3rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafbfc;
+}
+
+.download-card {
+  width: min(400px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.download-logo {
+  width: min(160px, 50vw);
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.download-meta {
+  margin: -0.5rem 0 0;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.download-status {
+  margin: -0.25rem 0 0;
+  color: #94a3b8;
+  font-size: 0.8125rem;
+}
+
+.back-link {
+  margin-top: 0.5rem;
+  color: #64748b;
+  font-size: 0.875rem;
+  text-decoration: none;
+
+  &:hover {
+    color: #0f172a;
+  }
+}
+
+:host ::ng-deep .download-btn .p-button {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #ffffff;
+
+  &:hover {
+    background: #15803d;
+    border-color: #15803d;
+  }
+}
