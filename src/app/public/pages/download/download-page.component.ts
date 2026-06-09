@@ -22,6 +22,12 @@ export class DownloadPageComponent {
       return;
     }
 
-    window.open(this.config.windowsX64Url, '_blank', 'noopener,noreferrer');
+    const link = document.createElement('a');
+    link.href = this.config.windowsX64Url;
+    link.download = 'UtiliStudy-Setup.exe';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   }
 }
