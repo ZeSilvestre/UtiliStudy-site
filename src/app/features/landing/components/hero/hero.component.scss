@@ -34,8 +34,15 @@
   gap: 1rem;
 }
 
+.hero-premium-note {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
 .hero-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.7rem;
 }
 

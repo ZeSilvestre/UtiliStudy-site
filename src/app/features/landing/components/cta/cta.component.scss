@@ -16,3 +16,15 @@ h2 {
   margin: 0 0 1rem;
   color: #ffffff;
 }
+
+p {
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 1.25rem;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}

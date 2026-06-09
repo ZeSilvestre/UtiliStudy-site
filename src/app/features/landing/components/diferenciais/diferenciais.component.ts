@@ -12,5 +12,7 @@ export class DiferenciaisComponent {
     'Personalização de temas',
     'Sons ambientes personalizados',
     'Sistema visual em árvore de progresso',
+    'Login Google e licença integrados no app desktop',
+    'Assinatura Premium com Mercado Pago no aplicativo',
   ];
 }

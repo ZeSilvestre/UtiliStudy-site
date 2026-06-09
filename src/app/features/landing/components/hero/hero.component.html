@@ -8,6 +8,10 @@
         experiência clara, moderna e confiável.
       </p>
 
+      <p class="hero-premium-note">
+        Plano Premium R$ 14,99/mês — assinatura feita diretamente no aplicativo desktop.
+      </p>
+
       <div class="hero-actions">
         <p-button
           label="Instalar pela Microsoft Store"
@@ -15,6 +19,13 @@
           size="large"
           [raised]="true"
           (onClick)="openStore()"
+        ></p-button>
+        <p-button
+          label="Download GitHub"
+          icon="pi pi-github"
+          size="large"
+          [outlined]="true"
+          (onClick)="openGithubReleases()"
         ></p-button>
       </div>
 

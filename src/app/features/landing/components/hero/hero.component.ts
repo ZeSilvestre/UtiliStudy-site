@@ -11,8 +11,13 @@ import { TagModule } from 'primeng/tag';
 })
 export class HeroComponent {
   readonly microsoftStoreUrl = 'https://apps.microsoft.com/';
+  readonly githubReleasesUrl = 'https://github.com/ZeSilvestre/UtiliStudy/releases/latest';
 
   openStore(): void {
     window.open(this.microsoftStoreUrl, '_blank', 'noopener,noreferrer');
+  }
+
+  openGithubReleases(): void {
+    window.open(this.githubReleasesUrl, '_blank', 'noopener,noreferrer');
   }
 }
