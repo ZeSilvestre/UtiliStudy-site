@@ -31,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Build app for GitHub Pages
-        run: npm run build -- --configuration production --base-href /UtiliStudy-site/
+        run: npm run build -- --configuration production --base-href /
 
       - name: Add SPA fallback
         run: cp dist/utilistudy-site/browser/index.html dist/utilistudy-site/browser/404.html
