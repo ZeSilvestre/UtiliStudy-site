@@ -1,64 +1,99 @@
 .download-section {
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 64px);
   padding: 3rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fafbfc;
+  background: linear-gradient(165deg, #060d18 0%, #0a1628 100%);
 }
 
 .download-card {
-  width: min(400px, 100%);
+  width: min(640px, 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
+  padding: 3rem 2.5rem;
   text-align: center;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
 }
 
-.download-logo {
-  width: min(160px, 50vw);
-  height: auto;
+.download-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.download-brand-icon {
+  width: var(--brand-download-icon-size);
+  height: var(--brand-download-icon-size);
+  max-width: min(14rem, 80vw);
+  max-height: min(14rem, 80vw);
+  object-fit: contain;
+}
+
+@media (max-width: 560px) {
+  .download-brand-icon {
+    width: min(10rem, 70vw);
+    height: min(10rem, 70vw);
+  }
 }
 
 h1 {
   margin: 0;
-  color: #0f172a;
-  font-size: 1.5rem;
+  color: #f8fafc;
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.download-trial {
+  margin: 0;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #6ee7b7;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: -0.02em;
 }
 
 .download-meta {
-  margin: -0.5rem 0 0;
+  margin: 0;
   color: #64748b;
   font-size: 0.875rem;
 }
 
 .download-status {
-  margin: -0.25rem 0 0;
+  margin: 0;
   color: #94a3b8;
   font-size: 0.8125rem;
 }
 
+.download-note {
+  margin: 0;
+  max-width: 320px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #94a3b8;
+}
+
 .back-link {
-  margin-top: 0.5rem;
-  color: #64748b;
+  margin-top: 0.25rem;
+  color: #93c5fd;
   font-size: 0.875rem;
   text-decoration: none;
 
   &:hover {
-    color: #0f172a;
+    color: #bfdbfe;
   }
 }
 
 :host ::ng-deep .download-btn .p-button {
-  background: #16a34a;
-  border-color: #16a34a;
-  color: #ffffff;
-
-  &:hover {
-    background: #15803d;
-    border-color: #15803d;
-  }
+  min-width: 220px;
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { DOWNLOAD_CONFIG } from '../../../shared/config/download.config';
+import { BRAND } from '../../../shared/config/brand.config';
 
 @Component({
   selector: 'app-download-page',
@@ -12,6 +13,7 @@ import { DOWNLOAD_CONFIG } from '../../../shared/config/download.config';
 })
 export class DownloadPageComponent {
   readonly config = DOWNLOAD_CONFIG;
+  readonly brand = BRAND;
 
   get downloadAvailable(): boolean {
     return !!this.config.windowsX64Url?.trim();

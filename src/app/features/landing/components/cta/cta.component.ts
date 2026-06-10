@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
+import { PRICING } from '../../../../shared/config/landing-content';
 
 @Component({
   selector: 'app-cta',
@@ -9,4 +10,7 @@ import { ButtonModule } from 'primeng/button';
   templateUrl: './cta.component.html',
   styleUrl: './cta.component.scss',
 })
-export class CtaComponent {}
+export class CtaComponent {
+  readonly trialDays = PRICING.trialDays;
+  readonly monthlyPrice = PRICING.monthlyPrice;
+}

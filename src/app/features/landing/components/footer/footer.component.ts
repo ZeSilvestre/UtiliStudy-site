@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { BRAND } from '../../../../shared/config/brand.config';
 
 @Component({
   selector: 'app-footer',
@@ -8,4 +9,6 @@ import { RouterLink } from '@angular/router';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })
-export class FooterComponent {}
+export class FooterComponent {
+  readonly brand = BRAND;
+}

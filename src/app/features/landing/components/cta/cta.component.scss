@@ -1,25 +1,46 @@
 .section {
-  padding: 2rem 1rem 4rem;
+  padding: 2rem 1.25rem 4.5rem;
+  background: #f8fafc;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
+}
+
+.cta-inner {
   text-align: center;
-  padding: 2rem 1rem;
-  border-radius: 1rem;
-  background: linear-gradient(120deg, #1570ef 0%, #1bb3d3 100%);
-  box-shadow: 0 20px 40px rgba(11, 42, 85, 0.2);
+  padding: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 3vw, 2.5rem);
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, #0b2a55 0%, #1570ef 55%, #1bb3d3 100%);
+  box-shadow: 0 24px 60px rgba(11, 42, 85, 0.25);
+}
+
+.cta-badge {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 h2 {
-  margin: 0 0 1rem;
-  color: #ffffff;
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
 }
 
 p {
-  color: rgba(255, 255, 255, 0.92);
-  margin-bottom: 1.25rem;
+  margin: 0 0 1.5rem;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .cta-actions {

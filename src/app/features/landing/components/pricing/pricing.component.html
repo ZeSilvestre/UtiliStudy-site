@@ -1,0 +1,63 @@
+<section class="pricing-section" id="precos">
+  <div class="container">
+    <div class="pricing-header">
+      <p class="eyebrow">Investimento na sua aprovação</p>
+      <h2>Teste grátis. Assine só se fizer sentido.</h2>
+      <p class="subtitle">
+        {{ pricing.trialDays }} dias para explorar tudo. Depois, um plano mensal acessível
+        com cancelamento simples a qualquer momento.
+      </p>
+    </div>
+
+    <div class="pricing-grid">
+      <article class="pricing-card pricing-card--featured">
+        <div class="pricing-card__badge">Mais popular</div>
+        <h3>Plano Mensal</h3>
+        <div class="pricing-card__price">
+          <span class="pricing-card__currency">{{ pricing.currency }}</span>
+          <span class="pricing-card__amount">{{ pricing.monthlyPrice }}</span>
+          <span class="pricing-card__period">/mês</span>
+        </div>
+        <p class="pricing-card__trial">
+          <i class="pi pi-gift"></i>
+          {{ pricing.trialDays }} dias grátis para novos usuários
+        </p>
+
+        <ul class="pricing-card__list">
+          @for (item of includes; track item) {
+            <li><i class="pi pi-check"></i>{{ item }}</li>
+          }
+        </ul>
+
+        <p-button
+          label="Baixar e começar grátis"
+          icon="pi pi-download"
+          size="large"
+          severity="success"
+          [raised]="true"
+          styleClass="pricing-cta"
+          routerLink="/download"
+        ></p-button>
+
+        <p class="pricing-card__footnote">
+          Pagamento via Mercado Pago, contratado no aplicativo desktop.
+        </p>
+      </article>
+
+      <div class="pricing-steps">
+        <h3>Como funciona</h3>
+        <ol>
+          @for (step of steps; track step.num) {
+            <li>
+              <span class="step-num">{{ step.num }}</span>
+              <div>
+                <strong>{{ step.titulo }}</strong>
+                <p>{{ step.texto }}</p>
+              </div>
+            </li>
+          }
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,11 +1,14 @@
 <footer class="footer">
   <div class="container">
-    <p>Contato: utilistudycontact@gmail.com</p>
-    <p>
-      <a routerLink="/download">Download</a>
-    </p>
-    <a routerLink="/politica-privacidade" aria-label="Política de Privacidade">
-      Política de Privacidade
+    <a routerLink="/" class="footer-brand" aria-label="Página inicial UtiliStudy">
+      <img [src]="brand.icon" alt="UtiliStudy" class="footer-brand-icon" />
+      <span class="footer-brand-name">UtiliStudy</span>
     </a>
+    <p>utilistudycontact@gmail.com</p>
+    <div class="footer-links">
+      <a routerLink="/download">Download</a>
+      <a href="/#precos">Preços</a>
+      <a routerLink="/politica-privacidade">Política de Privacidade</a>
+    </div>
   </div>
 </footer>

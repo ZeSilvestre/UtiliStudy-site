@@ -1,16 +1,17 @@
 <header class="topbar">
   <div class="topbar-content">
     <a routerLink="/" class="brand" aria-label="Página inicial UtiliStudy">
-      <img src="assets/images/branding/icon-utilistudy.png" alt="Ícone UtiliStudy" />
-      <span>UtiliStudy</span>
+      <img [src]="brand.icon" alt="UtiliStudy" class="brand-icon" />
+      <span class="brand-name">UtiliStudy</span>
     </a>
 
     <nav class="menu">
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+      <a href="/#recursos" class="nav-anchor">Recursos</a>
+      <a href="/#precos" class="nav-anchor">Preços</a>
       <a routerLink="/download" routerLinkActive="active">Download</a>
-      <a routerLink="/politica-privacidade" routerLinkActive="active">Política de Privacidade</a>
       <p-button
-        label="Download"
+        label="Testar grátis"
         icon="pi pi-download"
         size="small"
         severity="success"

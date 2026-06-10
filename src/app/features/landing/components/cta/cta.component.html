@@ -1,15 +1,19 @@
 <section class="section">
   <div class="container">
-    <h2>Comece hoje e transforme seu jeito de estudar.</h2>
-    <div class="cta-actions">
-      <p-button
-        label="Download"
-        icon="pi pi-download"
-        size="large"
-        severity="success"
-        [raised]="true"
-        routerLink="/download"
-      ></p-button>
+    <div class="cta-inner">
+      <p class="cta-badge">{{ trialDays }} dias grátis · depois R$ {{ monthlyPrice }}/mês</p>
+      <h2>Pronto para elevar sua preparação?</h2>
+      <p>Baixe o UtiliStudy, teste todas as funcionalidades e decida com calma.</p>
+      <div class="cta-actions">
+        <p-button
+          label="Baixar e testar grátis"
+          icon="pi pi-download"
+          size="large"
+          severity="success"
+          [raised]="true"
+          routerLink="/download"
+        ></p-button>
+      </div>
     </div>
   </div>
 </section>

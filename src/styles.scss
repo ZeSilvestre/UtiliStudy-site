@@ -5,27 +5,39 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   background: #f8fafc;
   color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
   --utili-primary: #1570ef;
   --utili-secondary: #1bb3d3;
   --utili-dark: #0b2a55;
+  --utili-success: #10b981;
+  --brand-icon-size: 4.25rem;
+  --brand-name-size: 1.75rem;
+  --brand-name-weight: 500;
+  /* Página de download — ~4× o tamanho padrão */
+  --brand-download-icon-size: 14rem;
 }
 
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
+  transform: translateY(28px);
   transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
+    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .reveal.revealed {
@@ -44,4 +56,8 @@ body {
 .p-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(21, 112, 239, 0.08);
+}
+
+a {
+  color: inherit;
 }

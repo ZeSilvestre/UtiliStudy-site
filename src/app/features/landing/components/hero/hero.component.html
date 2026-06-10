@@ -1,31 +1,62 @@
 <section class="hero-section">
+  <div class="hero-glow hero-glow--left"></div>
+  <div class="hero-glow hero-glow--right"></div>
+
   <div class="container">
     <div class="hero-copy">
-      <p-tag value="UtiliStudy" severity="contrast"></p-tag>
-      <h1>Seu plano de estudos completo, em um app simples de usar.</h1>
-      <p>
-        Organize matérias, acompanhe seu progresso e mantenha o foco em um só lugar, com uma
-        experiência clara, moderna e confiável.
+      <div class="hero-badges">
+        <span class="badge badge--trial">{{ pricing.trialDays }} dias grátis</span>
+        <span class="badge badge--plan">Plano mensal</span>
+      </div>
+
+      <h1>
+        Estude com método.<br />
+        <span class="hero-accent">Acompanhe cada avanço.</span>
+      </h1>
+
+      <p class="hero-lead">
+        O UtiliStudy reúne planejamento, execução, revisão e métricas em um app desktop
+        profissional — pensado para quem leva a preparação a sério.
       </p>
 
-      <p class="hero-plan-note">
-        Plano de uso — R$ 14,99 por mês, assinatura mensal contratada no aplicativo desktop.
-      </p>
+      <div class="hero-pricing">
+        <div class="hero-pricing__price">
+          <span class="hero-pricing__currency">{{ pricing.currency }}</span>
+          <span class="hero-pricing__amount">{{ pricing.monthlyPrice }}</span>
+          <span class="hero-pricing__period">/mês</span>
+        </div>
+        <p class="hero-pricing__note">
+          Teste <strong>{{ pricing.trialDays }} dias grátis</strong> ao criar sua conta.
+          Assinatura mensal via Mercado Pago, direto no aplicativo.
+        </p>
+      </div>
 
       <div class="hero-actions">
         <p-button
-          label="Download"
+          label="Baixar e testar grátis"
           icon="pi pi-download"
           size="large"
           severity="success"
           [raised]="true"
           routerLink="/download"
         ></p-button>
+        <a class="hero-link" href="#recursos">Ver recursos</a>
       </div>
+
+      <ul class="hero-trust">
+        <li><i class="pi pi-check"></i> Sem compromisso no período de teste</li>
+        <li><i class="pi pi-check"></i> Cancele a renovação quando quiser</li>
+        <li><i class="pi pi-check"></i> Login com Google em segundos</li>
+      </ul>
     </div>
 
     <div class="hero-visual">
-      <img src="assets/images/branding/logo-utilistudy.png" alt="Logo UtiliStudy" class="hero-logo" />
+      <app-screenshot-frame
+        [src]="heroImage"
+        [alt]="heroTitle"
+        [eager]="true"
+      ></app-screenshot-frame>
+      <div class="hero-visual__shadow"></div>
     </div>
   </div>
 </section>

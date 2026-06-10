@@ -1,24 +1,58 @@
-<section class="section">
+<section class="features-section" id="recursos">
   <div class="container">
-    <h2>Veja o app em ação</h2>
+    <header class="features-header">
+      <p class="eyebrow">Recursos</p>
+      <h2>Tudo que você precisa para estudar com método</h2>
+      <p class="subtitle">
+        Planejamento, prática, organização e métricas — cada ferramenta integrada no
+        UtiliStudy, com interface pensada para uso diário.
+      </p>
+    </header>
 
-    <div class="carousel-mask" style="margin-top: 3rem;">
-      <div class="carousel-track">
-        @for (print of printsLoop; track $index) {
-          <article class="slide">
-            <div class="mock-shot">
-              @if (print.imagem) {
-                <img [src]="print.imagem" [alt]="print.titulo" />
-              } @else {
-                <div class="placeholder-content">
-                  <i class="pi pi-image"></i>
-                  <span>Espaço para screenshot</span>
-                </div>
-              }
+    <div class="features-list">
+      @for (feature of features; track feature.id; let i = $index) {
+        <article
+          class="feature-row"
+          [class.feature-row--reverse]="i % 2 === 1"
+          appRevealOnScroll
+        >
+          <div class="feature-copy">
+            <h3>{{ feature.titulo }}</h3>
+            <p>{{ feature.descricao }}</p>
+          </div>
+          <div class="feature-media" [class.feature-media--compact]="feature.compactMedia">
+            <div class="feature-media__glow" aria-hidden="true"></div>
+            <app-screenshot-frame
+              [src]="feature.imagem"
+              [alt]="feature.titulo"
+              [eager]="feature.destaque ?? false"
+            ></app-screenshot-frame>
+          </div>
+        </article>
+      }
+
+      <div class="features-more" appRevealOnScroll>
+        <header class="features-more__header">
+          <p class="features-more__eyebrow">E muito mais</p>
+          <h3 class="features-more__title">Tudo o que o UtiliStudy oferece — em um só lugar</h3>
+          <p class="features-more__lead">
+            Além dos recursos que você viu acima, o app traz matérias, tarefas, timer,
+            widgets, backup na nuvem e personalização completa — sem juntar vários apps.
+          </p>
+        </header>
+
+        <div class="features-more__grid">
+          @for (group of extraGroups; track group.label) {
+            <div class="features-more__group">
+              <h4>{{ group.label }}</h4>
+              <ul>
+                @for (item of group.items; track item) {
+                  <li><i class="pi pi-check"></i>{{ item }}</li>
+                }
+              </ul>
             </div>
-            <h3>{{ print.titulo }}</h3>
-          </article>
-        }
+          }
+        </div>
       </div>
     </div>
   </div>

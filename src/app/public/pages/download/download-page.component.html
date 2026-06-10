@@ -1,17 +1,16 @@
 <section class="download-section">
   <div class="download-card">
-    <img
-      src="assets/images/branding/logo-utilistudy.png"
-      alt="UtiliStudy"
-      class="download-logo"
-    />
+    <div class="download-brand">
+      <img [src]="brand.icon" alt="UtiliStudy" class="download-brand-icon" />
+    </div>
 
-    <h1>Download</h1>
+    <h1>Baixar UtiliStudy</h1>
+    <p class="download-trial">3 dias grátis · depois R$ 14,99/mês</p>
     <p class="download-meta">{{ config.platform }} · v{{ config.version }}</p>
 
     <p-button
       class="download-btn"
-      label="Baixar"
+      label="Baixar instalador"
       icon="pi pi-download"
       size="large"
       severity="success"
@@ -23,6 +22,10 @@
       <p class="download-status">Disponível em breve.</p>
     }
 
-    <a routerLink="/" class="back-link">Voltar</a>
+    <p class="download-note">
+      Após instalar, entre com Google e comece seu teste gratuito imediatamente.
+    </p>
+
+    <a routerLink="/" class="back-link">← Voltar ao site</a>
   </div>
 </section>
