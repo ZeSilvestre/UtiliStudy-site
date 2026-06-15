@@ -3,6 +3,6 @@ export const DOWNLOAD_CONFIG = {
   windowsX64Url:
     'https://github.com/ZeSilvestre/UtiliStudy-releases/releases/latest/download/UtiliStudy-Setup.exe',
   /** Manter alinhado com UtiliStudy/package.json a cada release */
-  version: '6.0.1',
+  version: '6.0.2',
   platform: 'Windows x64',
 };
