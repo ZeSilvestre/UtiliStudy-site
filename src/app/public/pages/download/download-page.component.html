@@ -5,8 +5,8 @@
     </div>
 
     <h1>Baixar UtiliStudy</h1>
-    <p class="download-trial">3 dias grátis · depois R$ 14,99/mês</p>
     <p class="download-meta">{{ config.platform }} · v{{ config.version }}</p>
+    <p class="download-scope">{{ appScope.title }}. {{ appScope.summary }}</p>
 
     <p-button
       class="download-btn"
@@ -21,10 +21,6 @@
     @if (!downloadAvailable) {
       <p class="download-status">Disponível em breve.</p>
     }
-
-    <p class="download-note">
-      Após instalar, entre com Google e comece seu teste gratuito imediatamente.
-    </p>
 
     <a routerLink="/" class="back-link">← Voltar ao site</a>
   </div>

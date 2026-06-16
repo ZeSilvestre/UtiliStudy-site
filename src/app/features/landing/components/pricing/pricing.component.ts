@@ -15,8 +15,8 @@ export class PricingComponent {
 
   readonly includes = [
     'Dashboard com widgets personalizáveis',
-    'Relatórios de estudo, questões e provas',
-    'Cronograma semanal e sugestões inteligentes',
+    'Relatórios para registrar seu progresso (dados inseridos por você)',
+    'Cronograma semanal e lembretes de revisão',
     'Flashcards, conquistas e sons ambientes',
     'Temas e cores à sua escolha',
     'Backup na nuvem com Google Drive',

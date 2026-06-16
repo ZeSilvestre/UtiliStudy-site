@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { DOWNLOAD_CONFIG } from '../../../shared/config/download.config';
 import { BRAND } from '../../../shared/config/brand.config';
+import { APP_SCOPE } from '../../../shared/config/landing-content';
 
 @Component({
   selector: 'app-download-page',
@@ -14,6 +15,7 @@ import { BRAND } from '../../../shared/config/brand.config';
 export class DownloadPageComponent {
   readonly config = DOWNLOAD_CONFIG;
   readonly brand = BRAND;
+  readonly appScope = APP_SCOPE;
 
   get downloadAvailable(): boolean {
     return !!this.config.windowsX64Url?.trim();

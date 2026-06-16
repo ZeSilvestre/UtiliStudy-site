@@ -47,12 +47,6 @@
   gap: 1.25rem;
 }
 
-.hero-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-}
-
 .badge {
   display: inline-flex;
   align-items: center;
@@ -68,12 +62,6 @@
   background: linear-gradient(135deg, #10b981, #059669);
   color: #fff;
   box-shadow: 0 4px 20px rgba(16, 185, 129, 0.35);
-}
-
-.badge--plan {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: #cbd5e1;
 }
 
 h1 {
@@ -98,52 +86,6 @@ h1 {
   font-size: clamp(1rem, 1.6vw, 1.12rem);
   line-height: 1.65;
   color: #94a3b8;
-}
-
-.hero-pricing {
-  padding: 1rem 1.15rem;
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
-}
-
-.hero-pricing__price {
-  display: flex;
-  align-items: baseline;
-  gap: 0.15rem;
-  margin-bottom: 0.35rem;
-}
-
-.hero-pricing__currency {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #94a3b8;
-}
-
-.hero-pricing__amount {
-  font-size: 2.4rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  color: #f8fafc;
-}
-
-.hero-pricing__period {
-  font-size: 1rem;
-  color: #64748b;
-  margin-left: 0.15rem;
-}
-
-.hero-pricing__note {
-  margin: 0;
-  font-size: 0.92rem;
-  line-height: 1.5;
-  color: #94a3b8;
-
-  strong {
-    color: #6ee7b7;
-    font-weight: 600;
-  }
 }
 
 .hero-actions {
@@ -215,8 +157,7 @@ h1 {
     text-align: center;
   }
 
-  .hero-lead,
-  .hero-pricing {
+  .hero-lead {
     max-width: 100%;
   }
 

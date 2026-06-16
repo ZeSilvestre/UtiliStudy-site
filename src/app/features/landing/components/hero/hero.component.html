@@ -4,10 +4,6 @@
 
   <div class="container">
     <div class="hero-copy">
-      <div class="hero-badges">
-        <span class="badge badge--trial">{{ pricing.trialDays }} dias grátis</span>
-        <span class="badge badge--plan">Plano mensal</span>
-      </div>
 
       <h1>
         Estude com método.<br />
@@ -15,37 +11,24 @@
       </h1>
 
       <p class="hero-lead">
-        O UtiliStudy reúne planejamento, execução, revisão e métricas em um app desktop
-        profissional — pensado para quem leva a preparação a sério.
+        Organize sua rotina de estudos: planejamento, cronômetro, relatórios e métricas em um
+        app desktop
       </p>
 
-      <div class="hero-pricing">
-        <div class="hero-pricing__price">
-          <span class="hero-pricing__currency">{{ pricing.currency }}</span>
-          <span class="hero-pricing__amount">{{ pricing.monthlyPrice }}</span>
-          <span class="hero-pricing__period">/mês</span>
-        </div>
-        <p class="hero-pricing__note">
-          Teste <strong>{{ pricing.trialDays }} dias grátis</strong> ao criar sua conta.
-          Assinatura mensal via Mercado Pago, direto no aplicativo.
+      <aside class="scope-notice scope-notice--hero" aria-label="O que o UtiliStudy é e não é">
+        <p class="scope-notice__title">
+          <i class="pi pi-info-circle" aria-hidden="true"></i>
+          {{ appScope.title }}
         </p>
-      </div>
+        <p class="scope-notice__text">{{ appScope.summary }}</p>
+      </aside>
 
       <div class="hero-actions">
-        <p-button
-          label="Baixar e testar grátis"
-          icon="pi pi-download"
-          size="large"
-          severity="success"
-          [raised]="true"
-          routerLink="/download"
-        ></p-button>
         <a class="hero-link" href="#recursos">Ver recursos</a>
       </div>
 
       <ul class="hero-trust">
         <li><i class="pi pi-check"></i> Sem compromisso no período de teste</li>
-        <li><i class="pi pi-check"></i> Cancele a renovação quando quiser</li>
         <li><i class="pi pi-check"></i> Login com Google em segundos</li>
       </ul>
     </div>

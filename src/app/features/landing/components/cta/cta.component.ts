@@ -12,5 +12,4 @@ import { PRICING } from '../../../../shared/config/landing-content';
 })
 export class CtaComponent {
   readonly trialDays = PRICING.trialDays;
-  readonly monthlyPrice = PRICING.monthlyPrice;
 }

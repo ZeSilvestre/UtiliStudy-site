@@ -52,35 +52,24 @@ h1 {
   letter-spacing: -0.03em;
 }
 
-.download-trial {
-  margin: 0;
-  padding: 0.35rem 0.85rem;
-  border-radius: 999px;
-  background: rgba(16, 185, 129, 0.15);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  color: #6ee7b7;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
 .download-meta {
   margin: 0;
   color: #64748b;
   font-size: 0.875rem;
 }
 
+.download-scope {
+  margin: 0;
+  max-width: 34rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #94a3b8;
+}
+
 .download-status {
   margin: 0;
   color: #94a3b8;
   font-size: 0.8125rem;
-}
-
-.download-note {
-  margin: 0;
-  max-width: 320px;
-  font-size: 0.88rem;
-  line-height: 1.5;
-  color: #94a3b8;
 }
 
 .back-link {

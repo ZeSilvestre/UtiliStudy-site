@@ -1,5 +1,4 @@
 @import 'primeicons/primeicons.css';
-@import 'primeflex/primeflex.css';
 
 * {
   box-sizing: border-box;
@@ -56,6 +55,76 @@ body {
 .p-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(21, 112, 239, 0.08);
+}
+
+.scope-notice {
+  margin: 0;
+  padding: 1rem 1.15rem;
+  border-radius: 0.85rem;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e3a5f;
+}
+
+.scope-notice__title {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.scope-notice__text {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #334155;
+}
+
+.scope-notice__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.scope-notice__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #334155;
+}
+
+.scope-notice__list .pi-check {
+  margin-top: 0.15rem;
+  color: #1570ef;
+  font-size: 0.75rem;
+}
+
+.scope-notice--hero {
+  width: 100%;
+  background: rgba(21, 112, 239, 0.12);
+  border-color: rgba(147, 197, 253, 0.35);
+  color: #e2e8f0;
+}
+
+.scope-notice--hero .scope-notice__title {
+  color: #f8fafc;
+}
+
+.scope-notice--hero .scope-notice__text {
+  color: #cbd5e1;
+}
+
+.scope-notice--hero .pi-info-circle {
+  color: #93c5fd;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
 }
 
 a {

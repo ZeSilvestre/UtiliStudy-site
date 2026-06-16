@@ -2,11 +2,17 @@
   <div class="container">
     <header class="features-header">
       <p class="eyebrow">Recursos</p>
-      <h2>Tudo que você precisa para estudar com método</h2>
+      <h2>Ferramentas para organizar sua preparação</h2>
       <p class="subtitle">
-        Planejamento, prática, organização e métricas — cada ferramenta integrada no
-        UtiliStudy, com interface pensada para uso diário.
       </p>
+
+      <aside class="scope-notice" aria-label="Escopo do aplicativo">
+        <ul class="scope-notice__list">
+          @for (point of appScope.points; track point) {
+            <li><i class="pi pi-check"></i>{{ point }}</li>
+          }
+        </ul>
+      </aside>
     </header>
 
     <div class="features-list">
@@ -33,8 +39,8 @@
 
       <div class="features-more" appRevealOnScroll>
         <header class="features-more__header">
-          <p class="features-more__eyebrow">E muito mais</p>
-          <h3 class="features-more__title">Tudo o que o UtiliStudy oferece — em um só lugar</h3>
+          <p class="features-more__eyebrow">Outros recursos</p>
+          <h3 class="features-more__title">Organização completa em um só app</h3>
           <p class="features-more__lead">
             Além dos recursos que você viu acima, o app traz matérias, tarefas, timer,
             widgets, backup na nuvem e personalização completa — sem juntar vários apps.

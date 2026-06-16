@@ -4,13 +4,23 @@ export const PRICING = {
   currency: 'R$',
 } as const;
 
+export const APP_SCOPE = {
+  title: 'App de organização — sem banco de questões',
+  summary:
+    'O UtiliStudy não inclui questões, simulados prontos, apostilas nem material didático. Ele serve para planejar sua rotina, cronometrar estudos e registrar manualmente o progresso que você já obteve em PDFs, sites, cadernos ou outras plataformas.',
+  points: [
+    'Sem banco de questões integrado',
+    'Relatórios alimentados por dados que você insere',
+    'Foco em planejamento, cronograma e métricas da sua rotina',
+  ],
+} as const;
+
 export interface LandingFeature {
   id: number;
   titulo: string;
   descricao: string;
   imagem: string;
   destaque?: boolean;
-  /** Imagem menor — ideal para widgets/popups do app */
   compactMedia?: boolean;
 }
 
@@ -19,7 +29,6 @@ export interface LandingExtraGroup {
   items: string[];
 }
 
-/** Recursos do app ainda não destacados na galeria de screenshots */
 export const LANDING_EXTRAS: LandingExtraGroup[] = [
   {
     label: 'Planejamento',
@@ -60,7 +69,7 @@ export const LANDING_FEATURES: LandingFeature[] = [
     id: 1,
     titulo: 'Dashboard personalizável',
     descricao:
-      'Monte seu painel com widgets de métricas, calendário, conquistas, flashcards e muito mais — tudo no layout que faz sentido para você.',
+      'Monte seu painel com widgets de métricas, calendário, conquistas, flashcards e mais — no layout que faz sentido para você.',
     imagem: 'assets/screenshots/01-dashboard.png',
     destaque: true,
   },
@@ -68,77 +77,77 @@ export const LANDING_FEATURES: LandingFeature[] = [
     id: 2,
     titulo: 'Do seu jeito: escolha a cor que quiser',
     descricao:
-      'Temas claros, escuros e combinações de cores personalizadas para estudar com conforto visual e identidade própria.',
+      'Temas claros, escuros e combinações de cores personalizadas para estudar com conforto visual.',
     imagem: 'assets/screenshots/02-personalizacao-cores.png',
   },
   {
     id: 3,
     titulo: 'Relatório de estudos',
     descricao:
-      'Visualize tempo líquido, pausas e distribuição por matéria em gráficos claros — diário, mensal, anual ou por período.',
+      'Visualize tempo líquido, pausas e distribuição por matéria em gráficos — diário, mensal, anual ou por período.',
     imagem: 'assets/screenshots/03-relatorio-estudos.png',
   },
   {
     id: 4,
-    titulo: 'Relatório de questões — visão geral',
+    titulo: 'Registro de questões resolvidas',
     descricao:
-      'Acompanhe total de questões, acertos e aproveitamento geral com gráficos por matéria para identificar onde evoluir.',
+      'Anote manualmente quantas questões você fez em sites, PDFs ou cadernos externos. O app só organiza seus números — não oferece questões para resolver.',
     imagem: 'assets/screenshots/04-relatorio-questoes-grafico.png',
   },
   {
     id: 5,
-    titulo: 'Relatório de provas',
+    titulo: 'Registro de provas e simulados',
     descricao:
-      'Registre simulados e provas reais, compare aproveitamento e mantenha o histórico organizado por banca e edital.',
+      'Guarde resultados de provas e simulados que você fez fora do app. Compare aproveitamento e mantenha o histórico por banca ou edital.',
     imagem: 'assets/screenshots/06-relatorio-provas.png',
   },
   {
     id: 6,
     titulo: 'Flashcards',
     descricao:
-      'Crie cartões por matéria, revise com um clique e mantenha a retenção ativa no dia a dia da preparação.',
+      'Crie seus próprios cartões por matéria e revise no ritmo da sua preparação.',
     imagem: 'assets/screenshots/07-flashcards.png',
   },
   {
     id: 7,
     titulo: 'Cronograma semanal',
     descricao:
-      'Planeje manhã, tarde e noite da semana inteira, replique semanas anteriores e ajuste conforme sua rotina.',
+      'Planeje manhã, tarde e noite da semana, replique semanas anteriores e ajuste conforme sua rotina.',
     imagem: 'assets/screenshots/08-cronograma-semanal.png',
   },
   {
     id: 8,
-    titulo: 'Sugestões inteligentes',
+    titulo: 'Lembretes de revisão',
     descricao:
-      'Receba lembretes de revisões pendentes com prioridade automática, para não deixar conteúdo acumular.',
-    imagem: 'assets/screenshots/09-sugestoes-inteligentes.png',
+      'Veja revisões pendentes com prioridade automática, para não deixar conteúdo acumular.',
+    imagem: 'assets/screenshots/09-lembretes-revisao.png',
   },
   {
     id: 9,
     titulo: 'Conquistas',
     descricao:
-      'Desbloqueie badges por constância, metas e maratonas de estudo — gamificação que mantém a motivação alta.',
+      'Desbloqueie badges por constância, metas e maratonas de estudo.',
     imagem: 'assets/screenshots/10-conquistas.png',
   },
   {
     id: 10,
     titulo: 'Dificuldade percebida',
     descricao:
-      'Cruze tempo de estudo, questões resolvidas e taxa de acerto para enxergar onde você está forte ou precisa reforçar.',
+      'Cruze tempo de estudo, questões anotadas e taxa de acerto para ver onde reforçar — sempre com dados que você registrou.',
     imagem: 'assets/screenshots/11-dificuldade-percebida.png',
   },
   {
     id: 11,
     titulo: 'Fotos motivacionais',
     descricao:
-      'Guarde imagens, frases e referências visuais que te impulsionam durante a jornada de estudos.',
+      'Guarde imagens, frases e referências visuais que te impulsionam na preparação.',
     imagem: 'assets/screenshots/12-fotos.png',
   },
   {
     id: 12,
     titulo: 'Sons ambientes customizáveis',
     descricao:
-      'Chuva, natureza, piano, trânsito e dezenas de ambientes para focar — controle volume e combinações.',
+      'Chuva, natureza, piano, trânsito e outros ambientes para focar — com controle de volume.',
     imagem: 'assets/screenshots/13-sons-ambientes.png',
     compactMedia: true,
   },
