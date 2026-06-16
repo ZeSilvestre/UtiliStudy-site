@@ -7,12 +7,29 @@
     </div>
   </div>
   <div class="screenshot-frame__viewport">
-    <img
-      class="screenshot-frame__image"
-      [src]="src"
-      [alt]="alt"
-      [attr.loading]="eager ? 'eager' : 'lazy'"
-      [style.transform]="'scale(' + crop.scale + ')'"
-    />
+    @if (video) {
+      <video
+        #mediaVideo
+        class="screenshot-frame__media screenshot-frame__media--video"
+        [src]="video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        disablepictureinpicture
+        controlslist="nodownload noplaybackrate noremoteplayback"
+        [attr.aria-label]="alt"
+        [style.transform]="'scale(' + crop.scale + ')'"
+      ></video>
+    } @else if (src) {
+      <img
+        class="screenshot-frame__media"
+        [src]="src"
+        [alt]="alt"
+        [attr.loading]="eager ? 'eager' : 'lazy'"
+        [style.transform]="'scale(' + crop.scale + ')'"
+      />
+    }
   </div>
 </div>

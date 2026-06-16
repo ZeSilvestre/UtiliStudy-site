@@ -7,7 +7,7 @@ export const PRICING = {
 export const APP_SCOPE = {
   title: 'App de organização — sem banco de questões',
   summary:
-    'O UtiliStudy não inclui questões, simulados prontos, apostilas nem material didático. Ele serve para planejar sua rotina, cronometrar estudos e registrar manualmente o progresso que você já obteve em PDFs, sites, cadernos ou outras plataformas.',
+    'O UtiliStudy não inclui questões, simulados prontos, apostilas nem material didático. Ele serve para planejar sua rotina, cronometrar estudos e registrar manualmente o progresso que você já obteve em seus materiais de estudo.',
   points: [
     'Sem banco de questões integrado',
     'Relatórios alimentados por dados que você insere',

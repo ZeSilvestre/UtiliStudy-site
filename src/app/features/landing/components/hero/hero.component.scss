@@ -32,10 +32,10 @@
 .container {
   position: relative;
   z-index: 1;
-  max-width: 1180px;
+  max-width: 1240px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.05fr;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.28fr);
   gap: clamp(2rem, 4vw, 3.5rem);
   align-items: center;
 }
@@ -131,11 +131,14 @@ h1 {
 
 .hero-visual {
   position: relative;
+  margin-right: clamp(-1rem, -2vw, -0.25rem);
 
   app-screenshot-frame {
     position: relative;
     z-index: 1;
     display: block;
+    transform: scale(1.14);
+    transform-origin: center left;
   }
 }
 
@@ -150,6 +153,15 @@ h1 {
   .container {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+
+  .hero-visual {
+    margin-right: 0;
+
+    app-screenshot-frame {
+      transform: scale(1.04);
+      transform-origin: center;
+    }
   }
 
   .hero-copy {

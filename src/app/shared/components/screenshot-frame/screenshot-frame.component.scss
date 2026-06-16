@@ -46,9 +46,13 @@
   background: #060d18;
 }
 
-.screenshot-frame__image {
+.screenshot-frame__media {
   display: block;
   width: 100%;
   height: auto;
   transform-origin: center center;
+
+  &--video {
+    pointer-events: none;
+  }
 }
